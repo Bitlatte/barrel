@@ -1,0 +1,31 @@
+<script lang="ts">
+	import Section from '$lib/section.svelte';
+	import Editable from '$lib/modeling/editable.svelte';
+	import DocumentModeler from '$lib/modeling/document-modeler.svelte';
+</script>
+
+<Section large>
+	<div class={'mockup-window bg-base-300 shadow-md'}>
+		<div class={'p-4 bg-base-200 overflow-hidden'}>
+			<div class={'text-sm breadcrumbs'}>
+				<ul>
+					<li>
+						<div class={'breadcrumbs'}>
+							<ul>
+								<li>
+									<Editable placeholder={'Collection'} />
+								</li>
+								<li>
+									<Editable placeholder={'Document'} uuid />
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<DocumentModeler />
+			</div>
+		</div>
+	</div>
+</Section>
