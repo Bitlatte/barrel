@@ -38,7 +38,7 @@
 		{/if}
 		{#if options[index] === 'array'}
 			<Nested>
-				<self:array />
+				<svelte:self />
 			</Nested>
 		{/if}
 	{/each}
