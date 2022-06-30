@@ -5,7 +5,7 @@
 </script>
 
 <Section large>
-	<div class={'mockup-window bg-base-300 shadow-md'}>
+	<div class={'mockup-window bg-base-300 shadow-md md:min-w-[750px]'}>
 		<div class={'p-4 bg-base-200 overflow-hidden'}>
 			<div class={'text-sm breadcrumbs'}>
 				<ul>
