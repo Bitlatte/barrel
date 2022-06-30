@@ -2,6 +2,7 @@
 	import ArrayModeler from './array-modeler.svelte';
 	import BoolModeler from './bool-modeler.svelte';
 	import StringModeler from './string-modeler.svelte';
+	import Nested from './nested.svelte';
 
 	let options: any[] = ['string'];
 	let fields: any[] = [''];
@@ -37,14 +38,14 @@
 			{/if}
 		</div>
 		{#if options[index] === 'map'}
-			<div class={'ml-10'}>
+			<Nested>
 				<svelte:self />
-			</div>
+			</Nested>
 		{/if}
 		{#if options[index] === 'array'}
-			<div class={'ml-10'}>
+			<Nested>
 				<ArrayModeler />
-			</div>
+			</Nested>
 		{/if}
 	{/each}
 	<button
