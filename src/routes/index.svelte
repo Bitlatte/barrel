@@ -6,7 +6,7 @@
 </script>
 
 <Section large>
-	<div class={'w-full h-full flex flex-col justify-center items-center'}>
+	<div class={'w-full h-full flex flex-col justify-center items-center gap-10'}>
 		<Model />
 		<div class={'w-2/3 flex justify-end items-center'}>
 			<a class={'btn btn-outline btn-sm'} href={'/workspace'}>Open Workspace</a>
